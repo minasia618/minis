@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang HK'}
+    span.s1 {font: 12.0px 'PingFang HK'}
+    span.s2 {font: 12.0px Helvetica}
+    span.s3 {font: 12.0px 'PingFang SC'}
+  </style>
+</head>
+<body>
+<p class="p1">html</p>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-Hant"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;<span class="s1">每日一句</span> - <span class="s1">智慧语录</span>&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Helvetica Neue', Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeIn 0.8s ease-out;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, #4776E6, #8E54E9);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.content {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 40px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quote-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 5px solid #4776E6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quote-card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-5px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quote-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quote-author {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: right;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.actions {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-primary {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, #4776E6, #8E54E9);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-secondary {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #e9ecef;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #495057;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-3px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #6c757d;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid #e9ecef;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.qr-section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.qr-code {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #e9ecef;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #6c757d;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.scan-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #495057;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>from { opacity: 0; transform: translateY(20px); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to { opacity: 1; transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 600px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.quote-text {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.actions {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;<span class="s1">智慧语录</span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;<span class="s1">每次扫描都会获得一句随机名言</span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="quote-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="quote-text" id="quote"&gt;<span class="s1">点击下方按钮获取一句随机名言</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="quote-author" id="author"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn btn-primary" id="newQuote"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;path d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span><span class="s1">新句子</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn btn-secondary" id="shareQuote"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span><span class="s1">分享</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="qr-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="qr-code"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>[<span class="s1">二维码图案</span>]</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="scan-text"&gt;<span class="s1">扫描此二维码访问此页面</span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="footer"&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">            </span>&lt;p&gt;</span>每刷新一次页面或点击<span class="s2">"</span>新句子<span class="s2">"</span>按钮，都会显示不同的名言<span class="s2">&lt;/p&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// <span class="s1">名言库</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const quotes = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">成功不是将来才有的，而是从决定去做的那一刻起，持续累积而成。</span>", author: "<span class="s1">佚名</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">人生的价值，并不是用时间，而是用深度去衡量的。</span>", author: "<span class="s1">列夫</span>·<span class="s1">托尔斯泰</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">生活就像骑自行车，为了保持平衡，你必须不断前进。</span>", author: "<span class="s1">爱因斯坦</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">不要等待机会，而要创造机会。</span>", author: "<span class="s1">佚名</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">世上没有绝望的处境，只有对处境绝望的人。</span>", author: "<span class="s1">佚名</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">过去属于死神，未来属于你自己。</span>", author: "<span class="s1">雪莱</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">志不立，天下无可成之事。</span>", author: "<span class="s1">王阳明</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">路漫漫其修</span><span class="s3">远兮，吾将上下而求索。</span>", author: "<span class="s1">屈原</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">天行健，君子以自强不息。</span>", author: "<span class="s1">《周易》</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">宝剑锋从磨砺出，梅花香自苦寒来。</span>", author: "<span class="s1">《警世贤文》</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">长风破浪会有时，直挂云帆济沧海。</span>", author: "<span class="s1">李白</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">山重水复疑无路，柳暗花明又一村。</span>", author: "<span class="s1">陆游</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">不经一番寒彻骨，怎得梅花扑鼻香。</span>", author: "<span class="s1">黄蘖禅师</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">千淘万漉虽辛苦，吹尽狂沙始到金。</span>", author: "<span class="s1">刘禹锡</span>" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ text: "<span class="s1">成功的秘诀，在永不改变既定的目的。</span>", author: "<span class="s1">卢梭</span>" }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// DOM<span class="s1">元素</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const quoteElement = document.getElementById('quote');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const authorElement = document.getElementById('author');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const newQuoteButton = document.getElementById('newQuote');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const shareQuoteButton = document.getElementById('shareQuote');</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// <span class="s1">显示随机名言</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showRandomQuote() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const randomIndex = Math.floor(Math.random() * quotes.length);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const randomQuote = quotes[randomIndex];</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>quoteElement.textContent = randomQuote.text;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>authorElement.textContent = `— ${randomQuote.author}`;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// <span class="s1">添加淡入动画</span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>quoteElement.style.opacity = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>authorElement.style.opacity = 0;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>quoteElement.style.opacity = 1;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>authorElement.style.opacity = 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 300);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// <span class="s1">分享功能</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function shareQuote() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const currentQuote = quoteElement.textContent;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const currentAuthor = authorElement.textContent;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (navigator.share) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>navigator.share({</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>title: '<span class="s1">智慧语录</span>',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>text: `${currentQuote} ${currentAuthor}`,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>url: window.location.href</p>
+<p class="p1"><span class="Apple-converted-space">                </span>})</p>
+<p class="p1"><span class="Apple-converted-space">                </span>.catch(error =&gt; console.log('<span class="s1">分享出错</span>:', error));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// <span class="s1">备用方案</span> - <span class="s1">复制到剪贴板</span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const textToCopy = `${currentQuote} ${currentAuthor}\n\n<span class="s1">来自</span>: ${window.location.href}`;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>navigator.clipboard.writeText(textToCopy)</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>.then(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>alert('<span class="s1">名言已复制到剪贴板！</span>');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>})</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>.catch(err =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>console.error('<span class="s1">复制失败</span>:', err);</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>alert('<span class="s1">复制失败，请手动复制文本。</span>');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// <span class="s1">事件监听</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>newQuoteButton.addEventListener('click', showRandomQuote);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>shareQuoteButton.addEventListener('click', shareQuote);</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// <span class="s1">页面加载时显示随机名言</span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', showRandomQuote);</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span>// </span>添加页面刷新时也显示随机名言</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.onload = showRandomQuote;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
